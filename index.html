@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to FiberFold</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><li><a href="index.html">Fiber Fold</a></li></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://www.facebook.com/people/Fiber-Fold/61564201277927/">Shop Now</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Fiber Fold</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="https://www.facebook.com/people/Fiber-Fold/61564201277927/" onclick="toggleMenu()">Shop</a></li>
+          <li><a href="contacts.html" onclick="toggleMenu()">Contact</a></li>
+		  <li><a href="index.html" onclick="toggleMenu()">Fiberfold</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" class="rotate" alt="Fiber Fold" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Welcome to</p>
+        <h1 class="title">Fiber Fold</h1>
+        <p class="section__text__p2">Explore our Bags and Design!</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://www.facebook.com/profile.php?id=61564201277927')"
+          >
+            Message us.
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/facebook.png"
+            alt="Facebook Page Fiber Fold."
+            class="icon"
+            onclick="location.href='https://www.facebook.com/people/Fiber-Fold/61564201277927/'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram Fiber Fold Page."
+            class="icon"
+            onclick="location.href='https://www.instagram.com/fiber.fold/?igsh=ZnFtNDc5ejdyMGhp#'"
+          />
+        </div>
+      </div>
+    </section>
+
+<h1 class="title1"> BAGS COLLECTIONS</h1>
+	
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="./assets/about-1.jpg" style="width:100%">
+    <div class="text">Flaire</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="./assets/about-2.jpg" style="width:100%">
+    <div class="text">Bliss</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="./assets/about-3.jpg" style="width:100%">
+    <div class="text">Zebra Style</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="./assets/menu-2.jpg" style="width:100%">
+    <div class="text">Bliss</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="./assets/menu-9.jpg" style="width:100%">
+    <div class="text">Leaves</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+
+	
+	
+	
+	
+    <script src="script.js"></script>
+  </body>
+</html>
